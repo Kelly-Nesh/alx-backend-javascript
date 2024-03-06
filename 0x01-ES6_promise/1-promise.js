@@ -1,10 +1,10 @@
 export default function getFullResponseFromAPI(success) {
+  // eslint-disable-next-line no-unused-vars
   return new Promise((resolve, reject) => {
     if (success) {
       resolve({ status: 200, body: 'Success' });
     } else {
-      // eslint-disable-next-line prefer-promise-reject-errors
-      reject('The fake API is not working currently');
+      throw new Error('The fake API is not working currently');
     }
   });
 }
