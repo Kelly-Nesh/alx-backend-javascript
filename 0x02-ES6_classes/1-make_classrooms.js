@@ -1,5 +1,6 @@
-import ClassRoom from './0-classroom'
+import ClassRoom from './0-classroom';
 
-function initializeRooms () {
-    return [19, 20, 34].map(n => new ClassRoom(n));
+// eslint-disable-next-line no-unused-vars
+function initializeRooms() {
+  return [19, 20, 34].map((n) => new ClassRoom(n));
 }
