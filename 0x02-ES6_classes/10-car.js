@@ -7,7 +7,7 @@ export default class Car {
   }
 
   get brand() {
-    return this.brand;
+    return this._brand;
   }
 
   set brand(b) {
@@ -15,7 +15,7 @@ export default class Car {
   }
 
   get motor() {
-    return this.motor;
+    return this._motor;
   }
 
   set motor(m) {
@@ -23,7 +23,7 @@ export default class Car {
   }
 
   get color() {
-    return this.color;
+    return this._color;
   }
 
   set color(c) {
