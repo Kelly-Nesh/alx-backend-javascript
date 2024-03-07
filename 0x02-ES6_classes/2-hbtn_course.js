@@ -35,7 +35,7 @@ export default class HolbertonCourse {
   }
 
   set students(x) {
-    if (x.contructor === 'array') {
+    if (Array.isArray(x)) {
       this._students = x;
     } else {
       throw new TypeError('Students must be an array');
