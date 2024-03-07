@@ -24,9 +24,9 @@ export default class HolbertonClass {
 
   // eslint-disable-next-line consistent-return
   [Symbol.toPrimitive](cast) {
-    if (cast === 'string') {
+    if (cast === 'number') {
       return this.size;
-    } if (cast === 'number') {
+    } if (cast === 'string') {
       return this.location;
     }
   }
