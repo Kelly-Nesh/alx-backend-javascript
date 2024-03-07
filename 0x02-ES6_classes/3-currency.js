@@ -1,6 +1,6 @@
 /* eslint no-underscore-dangle: 0 */
 /* eslint-disable-next-line no-unused-vars */
-class Currency {
+export default class Currency {
   constructor(code, name) {
     this.code = code;
     this.name = name;
