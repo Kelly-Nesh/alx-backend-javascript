@@ -51,3 +51,13 @@ function executeWork(employee: any): void {
         employee.workTeacherTasks()
     }
 }
+
+type Subjects<String> = 'Math' | 'History'
+
+function teachClass(todayClass: Subjects<string>): string {
+    if (todayClass === 'Math') {
+        return 'Teaching Math'
+    } else if (todayClass === 'History') {
+        return 'Teaching History'
+    }
+}
