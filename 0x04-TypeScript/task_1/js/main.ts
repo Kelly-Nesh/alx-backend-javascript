@@ -7,6 +7,14 @@ interface Teacher {
     [index: string]: any
 }
 
-interface Directors extends Teacher{
+interface Directors extends Teacher {
     numberOfReports: number
+}
+
+interface printTeacherFunction {
+    (firstName: string, lastName: string): void;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    console.log(`${firstName[0]}. ${lastName}`)
 }
