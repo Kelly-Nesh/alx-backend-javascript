@@ -42,4 +42,3 @@ const countStudents = (dataPath) => {
 };
 
 module.exports = countStudents;
-
